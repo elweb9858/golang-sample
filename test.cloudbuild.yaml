@@ -18,3 +18,6 @@ steps:
         gsutil rm gs://${_BUCKET_NAME}/${SHORT_SHA}_test_log.xml
         gcloud artifacts docker images delete us-central1-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/myimage:${SHORT_SHA}
         gcloud run services delete helloworld-${SHORT_SHA} --region us-central1 --quiet
+options:
+  pool:
+    name: 'projects/argo-local-bweb/locations/us-east1/workerPools/my-privatepool'

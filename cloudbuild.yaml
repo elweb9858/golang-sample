@@ -44,7 +44,9 @@ steps:
            '--image=us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME/myimage:$SHORT_SHA', 
            '--region', 'us-central1', '--platform', 'managed']
   # [END cloudbuild_go_deploy_yaml]
-
+options:
+  pool:
+    name: 'projects/argo-local-bweb/locations/us-east1/workerPools/my-privatepool'
 # [START cloudbuild_go_logs_yaml]
 # Save test logs to Google Cloud Storage
 artifacts:
