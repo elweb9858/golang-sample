@@ -5,7 +5,7 @@ options:
   workerPool: 'projects/argo-ext-test-wiczer/locations/us-central1/workerPools/betsy-test1-pool'
 gitConfig:
   http:
-    proxySecretVersionName: 'projects/656775817001/secrets/betsy-test1-secret/versions/1'
+    proxySecretVersionName: 'projects/656775817001/secrets/squid-proxy-address/versions/latest'
 source:
   gitSource:
     url: 'https://github.com/elweb9858/golang-sample'
