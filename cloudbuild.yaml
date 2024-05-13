@@ -2,7 +2,7 @@ steps:
 - name: 'busybox'
   args: ['sleep', '10']
 options:
-  workerPool: 'projects/argo-ext-test-wiczer/locations/us-central1/workerPools/betsy-test1-pool'
+  workerPool: 'projects/argo-ext-test-wiczer/locations/us-central1/workerPools/squid-private-pool'
 gitConfig:
   http:
     proxySecretVersionName: 'projects/656775817001/secrets/squid-proxy-address/versions/latest'
