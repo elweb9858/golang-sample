@@ -2,10 +2,14 @@ steps:
 - name: 'busybox'
   args: ['sleep', '10']
 options:
-  workerPool: 'projects/git-proxy-bug-bash5/locations/australia-southeast1/workerPools/bug-bash-pool'
+  workerPool: 'projects/git-proxy-integration-test/locations/us-central1/workerPools/ssl-test-pool'
 gitConfig:
   http:
-    proxySecretVersionName: 'projects/740864308113/secrets/bug-bash-secret/versions/latest'
+    proxySecretVersionName: 'projects/85159269136/secrets/ssl-test/versions/latest'
+    proxySslCaInfo:
+      bucket: ssl-test-bucket
+      object: newcert.pem
+      generation: 1716401163847438
 source:
   gitSource:
     url: 'https://github.com/elweb9858/golang-sample'
