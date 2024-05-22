@@ -2,7 +2,7 @@ steps:
 - name: 'busybox'
   args: ['sleep', '10']
 options:
-  workerPool: 'projects/git-proxy-integration-test/locations/us-west1/workerPools/ssl-proxy-pool'
+  workerPool: 'projects/git-proxy-integration-test/locations/us-central1/workerPools/ssl-test-pool'
 gitConfig:
   http:
     proxySecretVersionName: 'projects/85159269136/secrets/ssl-test/versions/latest'
