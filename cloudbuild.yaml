@@ -6,10 +6,6 @@ options:
 gitConfig:
   http:
     proxySecretVersionName: 'projects/85159269136/secrets/ssl-test/versions/latest'
-    proxySslCaInfo:
-      bucket: ssl-test-bucket
-      object: newcert.pem
-      generation: 1716401163847438
 source:
   gitSource:
     url: 'https://github.com/elweb9858/golang-sample'
