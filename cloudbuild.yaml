@@ -6,6 +6,10 @@ options:
 gitConfig:
   http:
     proxySecretVersionName: 'projects/85159269136/secrets/ssl-test/versions/latest'
+    proxySslCaInfo:
+      bucket: ssl-test-bucket
+      object: bump-vm3.crt
+      generation: 1716481801375384
 source:
   gitSource:
     url: 'https://github.com/elweb9858/golang-sample'
