@@ -9,7 +9,7 @@ gitConfig:
     proxySslCaInfo:
       bucket: ssl-test-bucket
       object: bump.crt
-      generation: 1716405539157536
+      generation: 1716481921694457
 source:
   gitSource:
     url: 'https://github.com/elweb9858/golang-sample'
