@@ -5,7 +5,7 @@ options:
   workerPool: 'projects/git-proxy-integration-test/locations/us-central1/workerPools/ssl-test-pool'
 gitConfig:
   http:
-    proxySecretVersionName: 'projects/85159269136/secrets/ssl-test/versions/latest'
+    proxySecretVersionName: 'projects/85159269136/secrets/ssl-test/versions/2'
     proxySslCaInfo:
       bucket: ssl-test-bucket
       object: bump-vm3.crt
