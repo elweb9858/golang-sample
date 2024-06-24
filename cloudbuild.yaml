@@ -5,7 +5,7 @@ options:
   workerPool: 'projects/git-proxy-integration-test/locations/us-central1/workerPools/swp-test-pool'
 gitConfig:
   http:
-    proxySecretVersionName: 'projects/85159269136/secrets/swp-test-secret/latest'
+    proxySecretVersionName: 'projects/85159269136/secrets/swp-test-secret/versions/latest'
 source:
   gitSource:
     url: 'https://github.com/elweb9858/golang-sample'
